@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تکیا | کیمیاگران کسب‌وکار</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Vazirmatn', 'sans-serif'],
+            },
+            colors: {
+              tekia: {
+                navy: '#050A18',
+                blue: '#0F172A',
+                gold: '#D4AF37',
+                amber: '#F59E0B',
+              }
+            },
+            backgroundImage: {
+              'gold-gradient': 'linear-gradient(135deg, #F59E0B 0%, #D4AF37 100%)',
+              'blue-gradient': 'linear-gradient(135deg, #050A18 0%, #0F172A 100%)',
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      /* Custom scrollbar for modern feel */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #050A18;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #334155;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #475569;
+      }
+      .glass-card {
+        background: rgba(255, 255, 255, 0.03);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+      }
+      .glass-nav {
+        background: rgba(5, 10, 24, 0.7);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      }
+      .text-glow {
+        text-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3"
+  }
+}
+</script>
+</head>
+  <body class="bg-tekia-navy text-slate-300 antialiased selection:bg-tekia-gold selection:text-white">
+    <div id="root"></div>
+  </body>
+</html>
